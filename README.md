@@ -4,7 +4,7 @@ ait-adb
 ## Installing
 
 ```bash
-npm install ait-adb
+npm install https://github.com/ait-software/ait-adb
 ```
 
 ## Watch
