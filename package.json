@@ -1,6 +1,6 @@
 {
   "name": "ait-adb",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Android Debug Bridge interface",
   "main": "./build/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "lint:commit": "commitlint",
     "prepare": "npm run rebuild",
     "rebuild": "npm run clean && npm run build",
-    "test": "mocha --exit --timeout 1m \"./test/unit/**/adb-commands-specs.js\"",
+    "test": "mocha --exit --timeout 1m \"./test/unit/**/*-specs.js\"",
     "e2e-test": "mocha --exit --timeout 5m \"./test/functional/**/*-specs.js\""
   },
   "author": "ait-software",
@@ -42,8 +42,7 @@
     "keys",
     "lib",
     "build/index.*",
-    "build/lib",
-    "CHANGELOG.md"
+    "build/lib"
   ],
   "dependencies": {
     "adbkit-apkreader": "^3.1.2",
