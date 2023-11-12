@@ -46,11 +46,12 @@
   ],
   "dependencies": {
     "adbkit-apkreader": "^3.1.2",
-    "armor-support": "github:ait-software/armor-support",
     "ait-async": "github:ait-software/ait-async",
     "ait-process": "github:ait-software/ait-process",
+    "armor-support": "github:ait-software/armor-support",
     "async-lock": "^1.0.0",
     "bluebird": "^3.4.7",
+    "glob": "^10.3.10",
     "ini": "^4.1.1",
     "lodash": "^4.0.0",
     "lru-cache": "^10.0.0",
