@@ -7,11 +7,11 @@
 import {install} from 'source-map-support';
 install();
 
-import {ADB} from './build/lib/adb';
+import {ADB} from './lib/adb';
 
-export * from './build/lib/adb';
-export type * from './build/lib/mixins';
-export type * from './build/lib/tools';
-export type * from './build/lib/logcat';
-export type * from './build/lib/options';
+export * from './lib/adb';
+export type * from './lib/mixins';
+export type * from './lib/tools';
+export type * from './lib/logcat';
+export type * from './lib/options';
 export default ADB;
