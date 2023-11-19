@@ -871,7 +871,6 @@ describe('adb commands', withMocks({adb, logcat, ait_process, net}, function (mo
       });
     });
   });
-  return
   describe('device info', function () {
     it('should get device model', async function () {
       mocks.adb.expects('shell')

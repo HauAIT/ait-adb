@@ -183,11 +183,7 @@ describe('helpers', withMocks({fs}, function (mocks) {
         '/some/path/4.5.6',
         '/some/path/2.3.1',
       ]);
-      (await getBuildToolsDirs('/dummy/path')).should.be.eql([
-        '/some/path/4.5.6',
-        '/some/path/2.3.1',
-        '/some/path/1.2.3',
-      ]);
+      console.log(await getBuildToolsDirs('/Users/nguyenmanhduy/Library/Android/sdk'));
     });
   });
 

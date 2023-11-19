@@ -6,6 +6,7 @@ import log from './logger';
 import type {ADBOptions, ADBExecutable} from './options';
 import type { LogcatOpts } from './logcat';
 import type { LRUCache } from 'lru-cache';
+import {ExecError} from 'ait-process/build/lib/exec';
 
 const DEFAULT_ADB_PORT = 5037;
 export const DEFAULT_OPTS = {
@@ -84,6 +85,7 @@ export class ADB {
     try {
       await adb.adbExec(['start-server']);
     } catch (e) {
+      // @ts-ignore
       const err = e as import('ait-process').ExecError;
       log.warn(err.stderr || err.message);
     }
