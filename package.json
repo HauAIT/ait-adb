@@ -51,7 +51,7 @@
     "armor-support": "github:ait-software/armor-support",
     "async-lock": "^1.0.0",
     "bluebird": "^3.4.7",
-    "glob": "^10.3.10",
+    "glob": "^7.1.2",
     "ini": "^4.1.1",
     "lodash": "^4.0.0",
     "lru-cache": "^10.0.0",
