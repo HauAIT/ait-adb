@@ -1,6 +1,6 @@
 {
   "name": "ait-adb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Android Debug Bridge interface",
   "main": "./build/index.js",
   "scripts": {
@@ -17,7 +17,6 @@
     "e2e-test": "mocha --exit --timeout 5m \"./test/functional/**/*-specs.js\""
   },
   "author": "ait-software",
-  "license": "Apache-2.0",
   "engines": {
     "node": ">=14",
     "npm": ">=8"
@@ -74,7 +73,6 @@
     "@types/semver": "^7.5.0",
     "@types/sinon": "^10.0.15",
     "@types/source-map-support": "^0.5.6",
-    "ait-process": "github:ait-software/ait-process",
     "chai": "^4.1.0",
     "chai-as-promised": "^7.1.1",
     "conventional-changelog-conventionalcommits": "^7.0.1",
