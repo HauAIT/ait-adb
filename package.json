@@ -1,6 +1,6 @@
 {
   "name": "ait-adb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Android Debug Bridge interface",
   "main": "./build/index.js",
   "scripts": {
@@ -45,9 +45,9 @@
   ],
   "dependencies": {
     "adbkit-apkreader": "^3.1.2",
-    "ait-async": "^1.0.2",
-    "ait-process": "^1.0.3",
-    "armor-support": "^1.0.2",
+    "ait-async": "lastest",
+    "ait-process": "lastest",
+    "armor-support": "lastest",
     "async-lock": "^1.0.0",
     "bluebird": "^3.4.7",
     "glob": "^7.1.2",
