@@ -1,6 +1,6 @@
 {
   "name": "ait-adb",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Android Debug Bridge interface",
   "main": "./build/index.js",
   "scripts": {
@@ -38,7 +38,7 @@
   },
   "files": [
     "index.ts",
-    "keys",
+    "lib/tools/keys",
     "lib",
     "build/index.*",
     "build/lib"
