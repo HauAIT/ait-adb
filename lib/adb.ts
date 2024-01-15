@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import os from 'node:os';
+import os from 'os';
 import methods, {getAndroidBinaryPath} from './tools';
 import {DEFAULT_ADB_EXEC_TIMEOUT, requireSdkRoot, getSdkRootFromEnv} from './helpers';
 import log from './logger';
