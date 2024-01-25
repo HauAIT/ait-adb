@@ -1,6 +1,14 @@
 import _ from 'lodash';
 import os from 'os';
-import methods, {getAndroidBinaryPath} from './tools';
+import methods, {
+  AabUtils,
+  ADBCommands, ADBEmuCommands, ApkSigningCommands,
+  ApksUtils,
+  ApkUtils,
+  getAndroidBinaryPath, KeyboardCommands, LockManagementCommands, ManifestMethods,
+  SettingsClientCommands,
+  SystemCalls
+} from './tools';
 import {DEFAULT_ADB_EXEC_TIMEOUT, requireSdkRoot, getSdkRootFromEnv} from './helpers';
 import log from './logger';
 import type {ADBOptions, ADBExecutable} from './options';
@@ -94,5 +102,19 @@ export class ADB {
 
 // add all the methods to the ADB prototype
 Object.assign(ADB.prototype, methods);
+
+export interface ADB
+  extends ADBCommands,
+    AabUtils,
+    ApkUtils,
+    ApksUtils,
+    SystemCalls,
+    ADBOptions,
+    SettingsClientCommands,
+    ADBEmuCommands,
+    LockManagementCommands,
+    ManifestMethods,
+    KeyboardCommands,
+    ApkSigningCommands {}
 
 export {DEFAULT_ADB_PORT, getAndroidBinaryPath, getSdkRootFromEnv};
